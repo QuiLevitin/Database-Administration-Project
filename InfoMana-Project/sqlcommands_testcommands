@@ -1,0 +1,3 @@
+SELECT  saleTotal.InvoiceNumber, QuantityTotal, GrossAmountTotal, DiscountTotal, NetAmountTotal, FactoredAmountTotal  
+FROM saletotal, salesinfo
+WHERE saletotal.InvoiceNumber = salesinfo.InvoiceNumber AND salesinfo.DealerCode = '$DealerCode';
